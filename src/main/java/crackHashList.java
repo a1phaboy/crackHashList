@@ -63,6 +63,7 @@ public class crackHashList {
             hash ^= c;
             hash *= PRIME;
         }
+        /* >= 返回在黑名单内的类 ； < 会返回不在黑名单里的类 */
         return Arrays.binarySearch(denyHashCodes, hash) >= 0;
     }
 
